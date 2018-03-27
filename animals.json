@@ -1,0 +1,110 @@
+{
+  "animals": 
+  [
+    {
+      "name":"PANAMANIAN GOLDEN FROG",
+      "type":"Amphibian",
+      "number":"19",
+      "isCarnivore": false,
+      "imageUrl":"https://www.nashvillezoo.org/assets/2147/12_golden-frog-katie-gregory.jpg"
+    },
+    {
+      "name":"COTSWOLD SHEEP",
+      "type":"Mammal",
+      "number":"25",
+      "isCarnivore":false,
+      "imageUrl":"https://www.nashvillezoo.org/assets/2147/12_sheep18.jpg"
+    },
+    {
+      "name":"GIRAFFE",
+      "type":"Mammal",
+      "number":"12",
+      "isCarnivore":false,
+      "imageUrl":"https://www.nashvillezoo.org/assets/2147/12_giraffe.jpg"
+    },
+    {
+      "name":"RED KANGAROO",
+      "type":"Mammal",
+      "number":"11",
+      "isCarnivore":false,
+      "imageUrl":"https://www.nashvillezoo.org/assets/2147/12_kangaroo5.jpg"
+    },
+    {
+      "name":"DWARF CAIMAN",
+      "type":"Reptile",
+      "number":"3",
+      "isCarnivore":true,
+      "imageUrl":"https://www.nashvillezoo.org/assets/2147/12_dwarf_caiman_-_sperka.jpg"
+    },
+    {
+      "name":"EYELASH PALM PIT VIPER",
+      "type":"Reptile",
+      "number":"2",
+      "isCarnivore":true,
+      "imageUrl":"https://www.nashvillezoo.org/assets/2147/12_eyelashviper-web.jpg"
+    },
+    {
+      "name":"GALAPAGOS TORTOISE",
+      "type":"Reptile",
+      "number":"3",
+      "isCarnivore":false,
+      "imageUrl":"https://www.nashvillezoo.org/assets/2147/tortoise6.jpg"
+    },
+    {
+      "name":"WHITE-BLOTCHED RIVER STINGRAY",
+      "type":"Fish",
+      "number":"7",
+      "isCarnivore":true,
+      "imageUrl":"https://www.nashvillezoo.org/assets/2147/12_white-blotched-stingray.jpg"
+    },
+    {
+      "name":"LINED SEAHORSE",
+      "type":"Fish",
+      "number":"21",
+      "isCarnivore":false,
+      "imageUrl":"https://www.nashvillezoo.org/assets/2147/12_lined-seahorse.jpg"
+    },
+    {
+      "name":"MANDARIN DUCK",
+      "type":"Bird",
+      "number":"8",
+      "isCarnivore":false,
+      "imageUrl":"https://www.nashvillezoo.org/assets/2147/12_mandarinduck1.jpg"
+    },
+    {
+      "name":"HYACINTH MACAW",
+      "type":"Bird",
+      "number":"3",
+      "isCarnivore":false,
+      "imageUrl":"https://www.nashvillezoo.org/assets/2147/12_hyacinthmacaw3-sq.jpg"
+    },
+    {
+      "name":"GOATS",
+      "type":"Mammal",
+      "number":"50",
+      "isCarnivore":false,
+      "imageUrl":"https://www.nashvillezoo.org/assets/2147/12_nubian_goats_-_amiee_stubbs.jpg"
+    },
+    {
+      "name":"COUGAR",
+      "type":"Mammal",
+      "number":"5",
+      "isCarnivore":true,
+      "imageUrl":"https://www.nashvillezoo.org/assets/2147/12_cougar5.jpg"
+    },
+    {
+      "name":"PUERTO RICAN CRESTED TOAD",
+      "type":"Amphibian",
+      "number":"10",
+      "isCarnivore":false,
+      "imageUrl":"https://www.nashvillezoo.org/assets/2147/12_prct.jpg"
+    },
+    {
+      "name":"BLUE POISON ARROW FROG",
+      "type":"Amphibian",
+      "number":"7",
+      "isCarnivore":false,
+      "imageUrl":"https://www.nashvillezoo.org/assets/2147/12_frogs.jpg"
+    }
+  ]
+}
