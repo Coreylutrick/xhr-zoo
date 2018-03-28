@@ -17,7 +17,7 @@ const buildDomString = (animalArray) =>
     }
     domString +=  `<h1>${animal.name}</h1>`;
     domString +=  `<h3>${animal.number}</h3>`;
-    domString +=  `<img class="animalImg" src="${animal.imageUrl}" alt="Image of animal"><br>`;
+    domString +=  `<img class="animalImg" src="${animal.imageUrl}" alt="Image of animal">`;
     domString +=  `<div class="button-container">`;
     domString +=    `<button class="escaped">Escaped</button>`;
     domString +=  `</div>`
@@ -26,11 +26,34 @@ const buildDomString = (animalArray) =>
   PrintToDom(domString, "animal-holder")
 };
 
-const animalsEscaped = () => 
+const animalsEscaped = (e) => 
 {
-  console.log(showCarnivores);
+  const badAnimalButtonContainer = e.target.parentNode;
   showCarnivores();
-  showVegetables()
+  showVegetables();
+  showFoundButton(badAnimalButtonContainer);
+};
+
+const showFoundButton = (buttonContainer) =>
+{
+  buttonContainer.innerHTML = `<button id="found">Found</button>`;
+  initializeFoundButton()
+};
+
+const initializeFoundButton = () => 
+{
+  const foundButton = document.getElementById("found");
+  foundButton.addEventListener("click", () => 
+    {
+      const animals = document.getElementsByClassName("animal");
+      for(let m = 0; m<animals.length; m++)
+    {
+      animals[m].children[3].innerHTML = `<button class="escaped">Escaped</button>`;
+      animals[m].classList.remove("green");
+      animals[m].classList.remove("red");
+    };
+      addEscapedEventListener();
+  });
 };
 
 //Event Listener
@@ -52,9 +75,25 @@ const showCarnivores = () =>
   const carnivores = document.getElementsByClassName("carnivore");
   for (let j = 0; j<carnivores.length; j++)
   {
-    carnivores[j].children[4].innerHTML = "";
+    carnivores[j].children[3].innerHTML = "";
     carnivores[j].classList.add("red");
   }
+};
+
+const initializeEatMeBUtton = () => 
+{
+  const eatMeButtons = document.getElementsByClassName("eat-me")
+  for(let n = 0; n<eatMeButtons.length; n++)
+  {
+    eatMeButtons[n].addEventListener("click", itsAlreadyBeenEaten)
+  }
+};
+
+const itsAlreadyBeenEaten = (e) => 
+{
+  const currentNumber = e.target.parentNode.parentNode.children[1].innerHTML;
+  const newNumber = currentNumber*1 -1;
+  e.target.parentNode.parentNode.children[1].innerHTML = newNumber;
 };
 
 const showVegetables = () => 
@@ -62,9 +101,10 @@ const showVegetables = () =>
   const vegetables = document.getElementsByClassName("vegetable");
   for (let j = 0; j<vegetables.length; j++)
   {
-    vegetables[j].children[4].innerHTML = `<button>EAT ME!!!</button>`;
+    vegetables[j].children[3].innerHTML = `<button class="eat-me">EAT ME!!!</button>`;
     vegetables[j].classList.add("green");
   }
+  initializeEatMeBUtton();
 };
 
 //grabs the data and makes the array that im pulling from
