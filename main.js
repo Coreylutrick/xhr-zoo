@@ -10,7 +10,12 @@ const buildDomString = (animalArray) =>
   let domString = ""
   animalArray.forEach((animal) =>
   {
-    domString += `<div class="animal">`;
+    if(animal.isCarnivore)
+    {
+      domString += `<div class="animal carnivore">`;
+    } else {
+      domString += `<div class="animal vegetable">`
+    }
     domString +=  `<h1>${animal.name}</h1>`;
     domString +=  `<h3>${animal.number}</h3>`;
     domString +=  `<img class="animalImg" src="${animal.imageUrl}" alt="Image of animal"><br>`;
@@ -48,5 +53,7 @@ const startApp = () =>
   myRequest.open("get", "animals.json");
   myRequest.send();
 };
+
+
 
 startApp();
