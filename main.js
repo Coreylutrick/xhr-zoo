@@ -62,7 +62,7 @@ const showVegetables = () =>
   const vegetables = document.getElementsByClassName("vegetable");
   for (let j = 0; j<vegetables.length; j++)
   {
-    vegetables[j].children[4].innerHTML = "";
+    vegetables[j].children[4].innerHTML = `<button>EAT ME!!!</button>`;
     vegetables[j].classList.add("green");
   }
 };
