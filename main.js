@@ -10,8 +10,13 @@ const buildDomString = (animalArray) =>
   let domString = ""
   animalArray.forEach((animal) =>
   {
-    domString += `<div>`;
-    domString += `<h1>${animal.name}</h1>`;
+    domString += `<div class="animal">`;
+    domString +=  `<h1>${animal.name}</h1>`;
+    domString +=  `<h3>${animal.number}</h3>`;
+    domString +=  `<img class="animalImg" src="${animal.imageUrl}" alt="Image of animal"><br>`;
+    domString +=  `<div class="button-container">`;
+    domString +=    `<button class="card-button">Escaped</button>`;
+    domString +=  `</div>`
     domString += `</div>`;
   });
   PrintToDom(domString, "animal-holder")
