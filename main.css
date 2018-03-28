@@ -17,6 +17,7 @@ body {
   width: 70%;
   height: auto;
   margin: 0 auto;
+  border-radius: 5px;
 }
 
 #animal-holder {
@@ -27,4 +28,12 @@ body {
 
 .title {
   text-align: center;
+}
+
+.red {
+  background-color: red;
+}
+
+.green {
+  background-color: green;
 }
